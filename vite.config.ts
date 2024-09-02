@@ -8,6 +8,9 @@ export default defineConfig({
       babel: {
         plugins: ["babel-plugin-react-compiler"],
       },
+
+      // This will cause the react compiler to not work
+      // include:['.css','.scss']
     }),
   ],
 });

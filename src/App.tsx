@@ -2,7 +2,8 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import styles from "./styles.module.scss";
+import styles from "./styles.module.css";
+import scssStyles from "./styles.module.scss";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,7 +22,7 @@ function App() {
       <div className="card">
         <button
           onClick={() => setCount((count) => count + 1)}
-          className={styles.button}
+          className={[scssStyles.button, styles.button].join(" ")}
         >
           count is {count}
         </button>
